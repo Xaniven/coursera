@@ -1,0 +1,166 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-family: 'Arimo', sans-serif;
+    background-color: #FCF9F3;
+}
+
+/* Main Logo Header */
+header>img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 200px;
+    height: auto;
+}
+
+h1 {
+    color: #F8F3E7;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h2 {
+    color: #26877F;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+    color: #b53333;
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #541111;
+    text-decoration: underline;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin: 2rem 5%;
+}
+
+nav li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    flex: 1;
+}
+
+/* Main section with flexbox layout */
+section {
+    display: flex;
+    margin: 2rem 5%;
+    gap: 2rem;
+    justify-content: center;
+
+    /* Commented out to ensure there are 3 columns */
+    /* Uncomment to make responsive */
+    /* flex-wrap: wrap; */
+}
+
+article {
+    flex: 1;
+}
+
+/* Media query to stack content on smaller screens */
+/* Commented out to ensure there are 3 columns */
+/* Uncomment to make responsive */
+/* @media screen and (max-width: 992px) {
+    article {
+        flex: 100%;
+    }
+} */
+
+/* Promotional banner with background image */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../images/plants.jpeg") no-repeat center center;
+    background-color: rgba(38, 135, 127, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.banner p {
+    color: #F8F3E7;
+}
+
+/* Images with zoom effect */
+.image-zoom {
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 auto 1rem auto;
+}
+
+.image-zoom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    transition: transform .9s ease;
+}
+
+.image-zoom img:hover {
+    transform: scale(1.2);
+}
+
+/* Main section text styling */
+.cards p {
+    color: #0d433e;
+    margin-bottom: 0.5rem;
+}
+
+.cards a {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+/* Footer with flexbox layout */
+footer {
+    display: flex;
+    border-top: 2px solid #D3D3D3;
+    padding-top: 1.5rem;
+    margin: 3rem 5%;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.copyright {
+    text-align: right;
+    color: #b53333;
+}
