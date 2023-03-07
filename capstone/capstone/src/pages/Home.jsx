@@ -7,8 +7,8 @@ import img5 from "../imgs/grill.jpg";
 export default function Home() {
   return (
     <div className='h-[auto] '>
-      <section className='h-[30vh] bg-[#495E57] flex justify-between'>
-        <div className=' text-white text-2xl ml-6 p-6 w-[50vw]'>
+      <section className='min-h-[40vh] p-2 bg-[#495E57] flex justify-between'>
+        <div className=' text-white text-2xl ml-6 m-2 p-6 w-[50vw]'>
           <h1 className='font-extrabold text-4xl '>
             Little Lemon <br /> Chicago
           </h1>
